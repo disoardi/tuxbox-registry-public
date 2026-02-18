@@ -18,7 +18,7 @@ author      = "disoardi"
 run = "python3 -m sshmenuc"
 
 [tools.sshmenuc.dependencies]
-python       = ">=3.8"
+# No minimum Python enforced — works on 3.6+ via Poetry deps fallback
 requirements = "requirements.txt"
 
 [tools.cert_checker]
