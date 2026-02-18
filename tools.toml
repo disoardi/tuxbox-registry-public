@@ -1,0 +1,38 @@
+# TuxBox Public Registry
+# Community tools managed with TuxBox (https://github.com/disoardi/tuxbox)
+#
+# To add a tool, see CONTRIBUTING.md
+
+# ── Python Tools ──────────────────────────────────────────────────────────────
+
+[tools.sshmenuc]
+name        = "sshmenuc"
+repo        = "https://github.com/disoardi/sshmenuc"
+branch      = "main"
+version     = "1.1.0"
+type        = "python"
+description = "SSH connection manager with interactive TUI menu"
+author      = "disoardi"
+
+[tools.sshmenuc.commands]
+run = "python3 -m sshmenuc"
+
+[tools.sshmenuc.dependencies]
+python       = ">=3.8"
+requirements = "requirements.txt"
+
+[tools.cert_checker]
+name        = "cert_checker"
+repo        = "https://github.com/disoardi/cert-checker"
+branch      = "main"
+version     = "0.1.0"
+type        = "python"
+description = "SSL/TLS certificate management and verification Swiss Army knife"
+author      = "disoardi"
+
+[tools.cert_checker.commands]
+run = "cert-checker"
+
+[tools.cert_checker.dependencies]
+python = ">=3.8"
+poetry = true
