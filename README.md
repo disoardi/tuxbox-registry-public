@@ -2,7 +2,7 @@
 
 > Community-maintained catalog of tools for [TuxBox](https://github.com/disoardi/tuxbox)
 
-[![Tools](https://img.shields.io/badge/tools-2-blue)](#available-tools)
+[![Tools](https://img.shields.io/badge/tools-3-blue)](#available-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## What is this?
@@ -34,6 +34,7 @@ tbox run cert_checker -- check --host google.com
 |------|-------------|------|--------|
 | [sshmenuc](https://github.com/disoardi/sshmenuc) | SSH connection manager with interactive TUI menu | Python | [@disoardi](https://github.com/disoardi) |
 | [cert_checker](https://github.com/disoardi/cert-checker) | SSL/TLS certificate management and verification | Python + Docker | [@disoardi](https://github.com/disoardi) |
+| [hfs](https://github.com/disoardi/hfs) | HDFS CLI — no JVM required (ls, stat, du, health, schema) | Rust / Bash | [@disoardi](https://github.com/disoardi) |
 
 ## Want to add your tool?
 

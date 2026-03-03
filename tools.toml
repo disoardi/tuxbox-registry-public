@@ -36,3 +36,19 @@ run = "cert-checker"
 [tools.cert_checker.dependencies]
 python = ">=3.8"
 poetry = true
+
+# ── Bash / Native Tools ────────────────────────────────────────────────────────
+
+[tools.hfs]
+name        = "hfs"
+repo        = "https://github.com/disoardi/hfs"
+branch      = "main"
+version     = "0.1.0"
+type        = "bash"
+description = "HDFS CLI — no JVM required (ls, stat, du, health, schema inspection)"
+author      = "disoardi"
+
+[tools.hfs.commands]
+# tuxbox runs: bash scripts/tbox-run.sh <args>
+# On first run the script builds the Rust binary with cargo (Rust stable required).
+run = "bash scripts/tbox-run.sh"
