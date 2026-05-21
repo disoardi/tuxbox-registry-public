@@ -20,6 +20,7 @@ run = "python3 -m sshmenuc"
 [tools.sshmenuc.dependencies]
 # No minimum Python enforced — works on 3.6+ via Poetry deps fallback
 requirements = "requirements.txt"
+system       = ["openssh-client"]
 
 [tools.cert_checker]
 name        = "cert_checker"
