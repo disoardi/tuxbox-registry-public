@@ -9,19 +9,19 @@
 name        = "sshmenuc"
 repo        = "https://github.com/disoardi/sshmenuc"
 branch      = "main"
-version     = "1.1.0"
+version     = "1.3.4"
 type        = "python"
 isolation   = "venv"
 description = "SSH connection manager with interactive TUI menu"
 author      = "disoardi"
 
 [tools.sshmenuc.commands]
-run = "python3 -m sshmenuc"
+run = "sshmenuc"
 
 [tools.sshmenuc.dependencies]
-# No minimum Python enforced — works on 3.6+ via Poetry deps fallback
-requirements = "requirements.txt"
-system       = ["openssh-client"]
+python = ">=3.9"
+poetry = true
+system = ["openssh-client"]
 
 [tools.cert_checker]
 name        = "cert_checker"
