@@ -11,6 +11,7 @@ repo        = "https://github.com/disoardi/sshmenuc"
 branch      = "main"
 version     = "1.1.0"
 type        = "python"
+isolation   = "venv"
 description = "SSH connection manager with interactive TUI menu"
 author      = "disoardi"
 
