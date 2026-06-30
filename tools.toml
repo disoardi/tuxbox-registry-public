@@ -50,3 +50,13 @@ description = "HDFS CLI — no JVM required (ls, stat, du, health, schema inspec
 author      = "disoardi"
 # tbox downloads the pre-built binary from GitHub releases:
 #   hfs-linux-x86_64 | hfs-macos-arm64
+
+[tools.osctl]
+name        = "osctl"
+repo        = "https://github.com/disoardi/osctl-dist"
+version     = "0.1.0"
+type        = "native"
+description = "TUI per gestione cluster OpenSearch — health readout, allocation, ISM, RBAC, audit"
+author      = "disoardi"
+# tbox downloads the pre-built binary from GitHub releases:
+#   osctl-linux-x86_64
