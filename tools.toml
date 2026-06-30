@@ -9,7 +9,7 @@
 name        = "sshmenuc"
 repo        = "https://github.com/disoardi/sshmenuc"
 branch      = "main"
-version     = "1.4.0"
+version     = "1.4.1"
 type        = "python"
 isolation   = "venv"
 description = "SSH connection manager with interactive TUI menu"
