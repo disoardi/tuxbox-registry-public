@@ -9,10 +9,10 @@
 name        = "sshmenuc"
 repo        = "https://github.com/disoardi/sshmenuc"
 branch      = "main"
-version     = "1.4.1"
+version     = "1.4.2"
 type        = "python"
 isolation   = "venv"
-description = "SSH connection manager with interactive TUI menu"
+description = "[DEPRECATED, see sshmenuc_rust] SSH connection manager with interactive TUI menu"
 author      = "disoardi"
 
 [tools.sshmenuc.commands]
@@ -60,3 +60,13 @@ description = "TUI per gestione cluster OpenSearch — health readout, allocatio
 author      = "disoardi"
 # tbox downloads the pre-built binary from GitHub releases:
 #   osctl-linux-x86_64
+
+[tools.sshmenuc_rust]
+name        = "sshmenuc_rust"
+repo        = "https://github.com/disoardi/sshmenuc-rust"
+version     = "1.0.0"
+type        = "native"
+description = "SSH connection manager with interactive TUI menu (Rust rewrite of sshmenuc)"
+author      = "disoardi"
+# tbox downloads the pre-built binary from GitHub releases:
+#   sshmenuc-linux-x86_64 | sshmenuc-macos-arm64

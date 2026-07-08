@@ -2,7 +2,7 @@
 
 > Community-maintained catalog of tools for [TuxBox](https://github.com/disoardi/tuxbox)
 
-[![Tools](https://img.shields.io/badge/tools-4-blue)](#available-tools)
+[![Tools](https://img.shields.io/badge/tools-5-blue)](#available-tools)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ## What is this?
@@ -24,7 +24,7 @@ tbox init https://github.com/disoardi/tuxbox-registry-public
 tbox list
 
 # Run a tool (auto-clones on first use)
-tbox run sshmenuc
+tbox run sshmenuc_rust
 tbox run cert_checker -- check --host google.com
 ```
 
@@ -32,7 +32,8 @@ tbox run cert_checker -- check --host google.com
 
 | Tool | Description | Type | Author |
 |------|-------------|------|--------|
-| [sshmenuc](https://github.com/disoardi/sshmenuc) | SSH connection manager with interactive TUI menu | Python | [@disoardi](https://github.com/disoardi) |
+| [sshmenuc](https://github.com/disoardi/sshmenuc) | **Deprecated** — SSH connection manager, see sshmenuc_rust | Python | [@disoardi](https://github.com/disoardi) |
+| [sshmenuc_rust](https://github.com/disoardi/sshmenuc-rust) | SSH connection manager with interactive TUI menu (Rust rewrite of sshmenuc) | Rust (native) | [@disoardi](https://github.com/disoardi) |
 | [cert_checker](https://github.com/disoardi/cert-checker) | SSL/TLS certificate management and verification | Python + Docker | [@disoardi](https://github.com/disoardi) |
 | [hfs](https://github.com/disoardi/hfs) | HDFS CLI — no JVM required (ls, stat, du, health, schema) | Rust / Bash | [@disoardi](https://github.com/disoardi) |
 | [osctl](https://github.com/disoardi/osctl-dist) | TUI per gestione cluster OpenSearch — health, allocation, ISM, RBAC, audit | Rust (native) | [@disoardi](https://github.com/disoardi) |
