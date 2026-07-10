@@ -62,11 +62,16 @@ author      = "disoardi"
 #   osctl-linux-x86_64
 
 [tools.sshmenuc_rust]
-name        = "sshmenuc"
+name        = "sshmenuc_rust"
 repo        = "https://github.com/disoardi/sshmenuc-rust"
 version     = "1.1.0"
 type        = "native"
 description = "SSH connection manager with interactive TUI menu (Rust rewrite of sshmenuc)"
 author      = "disoardi"
+# name is "sshmenuc_rust", not "sshmenuc": tbox installs native tools at
+# ~/.tuxbox/tools/<name>/<name>, and "sshmenuc" is already the legacy Python
+# tool's git-clone directory there (which contains its own sshmenuc/ package
+# subfolder) — reusing the name makes tbox mistake that folder for the
+# downloaded binary and fail with "permission denied" trying to exec a directory.
 # tbox downloads the pre-built binary from GitHub releases:
-#   sshmenuc-linux-x86_64 | sshmenuc-macos-arm64
+#   sshmenuc_rust-linux-x86_64 | sshmenuc_rust-macos-arm64
