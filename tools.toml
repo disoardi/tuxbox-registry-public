@@ -62,9 +62,9 @@ author      = "disoardi"
 #   osctl-linux-x86_64
 
 [tools.sshmenuc_rust]
-name        = "sshmenuc_rust"
+name        = "sshmenuc"
 repo        = "https://github.com/disoardi/sshmenuc-rust"
-version     = "1.0.0"
+version     = "1.1.0"
 type        = "native"
 description = "SSH connection manager with interactive TUI menu (Rust rewrite of sshmenuc)"
 author      = "disoardi"
